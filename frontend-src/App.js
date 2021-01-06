@@ -1,35 +1,51 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter, Route, Link, NavLink, Switch } from "react-router-dom"
-import Home from "./components/Home"
-import Animal from "./components/Animal"
-import About from "./components/About"
-import Secret from "./components/Secret"
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Link, NavLink, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import Animal from "./components/Animal";
+import About from "./components/About";
+import Secret from "./components/Secret";
 
 function App() {
   return (
     <BrowserRouter>
       <header className="bg-light pt-3">
         <div className="container">
-          <h1 className="display-1">Our Amazing App!</h1>
+          <h1 className="display-1">Paul's Amazing App!</h1>
           <ul className="nav nav-tabs">
             <li className="nav-item">
-              <NavLink to="/animal/meowsalot" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/animal/meowsalot"
+                className="nav-link"
+                activeClassName="active"
+              >
                 Meowsalot
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/animal/barksalot" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/animal/barksalot"
+                className="nav-link"
+                activeClassName="active"
+              >
                 Barksalot
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/animal/purrsloud" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/animal/purrsloud"
+                className="nav-link"
+                activeClassName="active"
+              >
                 Purrsloud
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/secret" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/secret"
+                className="nav-link"
+                activeClassName="active"
+              >
                 Secret
               </NavLink>
             </li>
@@ -66,7 +82,7 @@ function App() {
         </p>
       </footer>
     </BrowserRouter>
-  )
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById("app"))
+ReactDOM.render(<App />, document.getElementById("app"));
